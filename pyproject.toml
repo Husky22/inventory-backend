@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+requires-python = ">=3.11"
+name = "inventory-backend"
+authors = [{name = "Niklas von Minckwitz", email = "niklas.v.minckwitz@gmail.com"}]
+version = "0.1.0"
+dependencies = [
+	"uvicorn",
+	"fastapi",
+	"pydantic",
+	"psycopg",
+	"python-decouple",
+	"aiosqlite",
+]
+[project.optional-dependencies]
+dev = [
+	"pytest",
+	"pytest-asyncio",
+	"pytest-cov",
+	"pytest-mock",
+	"pytest-asyncio",
+]
+
+
