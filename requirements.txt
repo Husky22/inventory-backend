@@ -12,14 +12,54 @@ anyio==3.7.1
     # via
     #   fastapi
     #   starlette
+certifi==2023.11.17
+    # via requests
+charset-normalizer==3.3.2
+    # via requests
 click==8.1.7
     # via uvicorn
+contourpy==1.2.0
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
 fastapi==0.104.1
     # via inventory-backend (pyproject.toml)
+filelock==3.13.1
+    # via torch
+fonttools==4.46.0
+    # via matplotlib
+fsspec==2023.12.0
+    # via torch
 h11==0.14.0
     # via uvicorn
 idna==3.6
-    # via anyio
+    # via
+    #   anyio
+    #   requests
+jinja2==3.1.2
+    # via torch
+kiwisolver==1.4.5
+    # via matplotlib
+markupsafe==2.1.3
+    # via jinja2
+matplotlib==3.8.2
+    # via inventory-backend (pyproject.toml)
+mpmath==1.3.0
+    # via sympy
+networkx==3.2.1
+    # via torch
+numpy==1.26.2
+    # via
+    #   contourpy
+    #   inventory-backend (pyproject.toml)
+    #   matplotlib
+    #   torchvision
+packaging==23.2
+    # via matplotlib
+pillow==10.1.0
+    # via
+    #   matplotlib
+    #   torchvision
 psycopg==3.1.13
     # via inventory-backend (pyproject.toml)
 pydantic==2.5.2
@@ -28,17 +68,41 @@ pydantic==2.5.2
     #   inventory-backend (pyproject.toml)
 pydantic-core==2.14.5
     # via pydantic
+pyparsing==3.1.1
+    # via matplotlib
+python-dateutil==2.8.2
+    # via matplotlib
 python-decouple==3.8
     # via inventory-backend (pyproject.toml)
+python-multipart==0.0.6
+    # via inventory-backend (pyproject.toml)
+requests==2.31.0
+    # via torchvision
+six==1.16.0
+    # via python-dateutil
 sniffio==1.3.0
     # via anyio
 starlette==0.27.0
     # via fastapi
+sympy==1.12
+    # via torch
+torch==2.1.1
+    # via
+    #   inventory-backend (pyproject.toml)
+    #   torchaudio
+    #   torchvision
+torchaudio==2.1.1
+    # via inventory-backend (pyproject.toml)
+torchvision==0.16.1
+    # via inventory-backend (pyproject.toml)
 typing-extensions==4.8.0
     # via
     #   fastapi
     #   psycopg
     #   pydantic
     #   pydantic-core
+    #   torch
+urllib3==2.1.0
+    # via requests
 uvicorn==0.24.0.post1
     # via inventory-backend (pyproject.toml)
